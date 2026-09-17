@@ -10,11 +10,10 @@ export default defineConfig({
   },
   use: {
     baseURL: 'http://localhost:5000/',
-    headless: true,
+    headless: false,
     screenshot: 'only-on-failure',
     video: 'retain-on-failure',
     trace: 'retain-on-failure',
-  },
   },
   // projects: [
   //   {
@@ -33,8 +32,7 @@ export default defineConfig({
   //   },
   //   {
   //     name: 'auth-setup',
-  //     testMatch: 'tests/setup/Auth.setup.ts',
+  //     testMatch: 'e2e/configure/setup/Auth.setup.ts',
   //   }
   // ]
-
 });
